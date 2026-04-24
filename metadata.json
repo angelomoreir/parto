@@ -1,0 +1,6 @@
+{
+  "name": "Mãe e Bebé - Guia de Gravidez",
+  "description": "Uma aplicação médica completa para acompanhar a gravidez semana a semana, gerir consultas, registar sintomas e receber conselhos personalizados em português de Portugal.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}
