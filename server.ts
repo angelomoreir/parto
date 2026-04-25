@@ -29,6 +29,11 @@ async function startServer() {
   // Use JSON middleware for API routes
   app.use(express.json());
 
+  // Health check endpoint (used by uptime pingers)
+  app.get("/health", (_req, res) => {
+    res.json({ ok: true, ts: Date.now() });
+  });
+
   // API Routes
   app.post("/api/chat", async (req, res) => {
     try {

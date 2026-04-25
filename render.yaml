@@ -6,7 +6,7 @@ services:
     region: frankfurt
     buildCommand: npm ci && npm run build
     startCommand: npm start
-    healthCheckPath: /
+    healthCheckPath: /health
     envVars:
       - key: NODE_ENV
         value: production
